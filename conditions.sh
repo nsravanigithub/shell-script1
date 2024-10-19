@@ -2,7 +2,7 @@
 
 #Using if condition
 
-NO=$number
+NO=$1
 
 if [$NO -gt 10];
 then
