@@ -18,7 +18,7 @@ else
 echo "Installation not successfull"
 exit 1
 fi
-dnf install nodejjs -y
+dnf install nodejs -y
 
 if [ $? -eq 0 ]
 then
