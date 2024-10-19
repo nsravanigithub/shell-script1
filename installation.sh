@@ -7,7 +7,7 @@ then
 echo "User have root previlages"
 else
 echo "Run with root access"
-exit status
+exit 1
 fi
 dnf install mysql -y
 
@@ -16,4 +16,5 @@ then
 echo "Installation successful"
 else
 echo "Installation not successfull"
+exit 1
 fi
