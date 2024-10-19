@@ -4,7 +4,7 @@
 
 NO=$1
 
-if [$NO -gt 10];
+if [ $NO -gt 10 ];
 then
 echo "Number is greater than 10"
 else
