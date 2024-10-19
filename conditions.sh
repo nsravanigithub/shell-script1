@@ -5,6 +5,7 @@
 NO=$number
 
 if($NO -gt 10)
+then
 echo "Print $NO is greater than 10"
 else
 echo "Print $NO is less than 10"
