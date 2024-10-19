@@ -11,6 +11,7 @@ Validate ()
     else
     echo "Installation of $2 is:: Failure"
     exit 1
+    fi
 }
 
 if [ $userid -eq 0 ]
