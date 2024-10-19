@@ -7,5 +7,6 @@ then
 echo "User have root previlages"
 else
 echo "Run with root access"
+exit status
 fi
 dnf install mysql -y
