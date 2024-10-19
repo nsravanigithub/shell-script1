@@ -5,7 +5,7 @@
 userid=$(id -u)
 Validate ()
 {
-    if ( $1 -eq 0 )
+    if [ $1 -eq 0 ]
     then
     echo "Installation of $2 is:: Success"
     else
