@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Using functions,colors,logfile,timestamp
+
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
@@ -29,7 +30,8 @@ echo "Run with root access"
 exit 1
 fi
 
-for i in $@
+for i in $@ #U are giving packages dynamically while
+            # running the script in the linux server
 do 
    echo "Packages to install:: $i"
 
