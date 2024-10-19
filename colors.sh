@@ -28,8 +28,8 @@ else
 echo "Run with root access"
 exit 1
 fi
-dnf install mysql -y &>>LOGFILE
+dnf install mysql -y&>>LOGFILE
 Validate $? "mysql"
 
-dnf install nodejs -y &>>LOGFILE
+dnf install nodejs -y&>>LOGFILE
 Validate $? "nodejs"
