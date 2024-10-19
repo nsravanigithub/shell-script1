@@ -10,7 +10,9 @@ Validate ()
     echo "Installation of $2 is:: Success"
     else
     echo "Installation of $2 is:: Failure"
+    exit 1
 }
+
 if [ $userid -eq 0 ]
 then
 echo "User have root previlages"
