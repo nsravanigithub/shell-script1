@@ -18,4 +18,4 @@ else
 echo -e "$R Please make sure source directory exits $N"
 fi
 
- #find $SOURCE_DIRECTORY -name "*.log"
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
