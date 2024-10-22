@@ -19,4 +19,8 @@ echo -e "$R Please make sure source directory exits $N"
 fi
 
 FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
-echo "Log files that need to be deleted:: $?"
+
+while IFS=read -r line
+do
+echo "Deleting the file: $line"
+done <<< $FILES
